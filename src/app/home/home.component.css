@@ -1,0 +1,25 @@
+.homepage-container {
+  padding: 20px 10%;
+  margin-top: 20px;
+}
+
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.profile-pic-container {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-pic-container img {
+  max-width: 100%;
+  height: auto;
+}

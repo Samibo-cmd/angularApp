@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterModule],
+  standalone: true,
+  imports: [RouterModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angularApp';
+  isMenuOpen = false;
+
+  openMenu() {
+    this.isMenuOpen = true;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
 }
